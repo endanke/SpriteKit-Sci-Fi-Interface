@@ -34,6 +34,8 @@ float rotateScale = 0.0;
     self.backgroundColor = UIColor.whiteColor;
     self.wayPoints = [NSMutableArray array];
     
+    self.mainEffect = [SKEffectNode node];
+    
     self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
     self.physicsWorld.gravity = CGVectorMake(0.0, 0.0);
     self.physicsWorld.contactDelegate = self;
@@ -84,7 +86,17 @@ float rotateScale = 0.0;
     self.canvasNode.fillColor = nil;
     self.canvasNode.position = CGPointMake(0,0);
     
-    [self addChild:self.canvasNode];
+    [self.mainEffect addChild:self.canvasNode];
+    
+   // CIFilter *blur = [CIFilter filterWithName:@"CIGaussianBlur" keysAndValues:@"inputRadius", @10.0f, nil];
+   // [self.mainEffect setFilter:blur];
+
+    CIFilter* hole = [CIFilter filterWithName:@"CIHoleDistortion"];
+    [self.mainEffect setFilter:hole];
+    
+    self.mainEffect.shouldRasterize = YES;
+    
+    [self addChild:self.mainEffect];
 }
 
 CGPathRef CGPathCreateCopyByDashingPath(
@@ -112,14 +124,10 @@ CGPathRef CGPathCreateCopyByDashingPath(
 }
 
 - (CGPathRef)createPathToMove {
-    //1
     CGMutablePathRef ref = CGPathCreateMutable();
-    
-    //2
     for(int i = 0; i < [self.wayPoints count]; ++i) {
         CGPoint p = [self.wayPoints[i] CGPointValue];
         p = [self.scene convertPointToView:p];
-        //3
         if(i == 0) {
             CGPathMoveToPoint(ref, NULL, p.x, p.y);
         } else {
@@ -131,24 +139,9 @@ CGPathRef CGPathCreateCopyByDashingPath(
 }
 
 - (void)drawLines {
-    NSMutableArray *temp = [NSMutableArray array];
-    for(CALayer *layer in self.view.layer.sublayers) {
-        if([layer.name isEqualToString:@"line"]) {
-            [temp addObject:layer];
-        }
-    }
-    
-    [temp makeObjectsPerformSelector:@selector(removeFromSuperlayer)];
-    
-    CAShapeLayer *lineLayer = [CAShapeLayer layer];
-    lineLayer.name = @"line";
-    lineLayer.strokeColor = [UIColor grayColor].CGColor;
-    lineLayer.fillColor = nil;
-    
     CGPathRef path = [self createPathToMove];
     self.canvasNode.path = path;
     CGPathRelease(path);
-//    [self.view.layer addSublayer:lineLayer];
 }
 
 @end

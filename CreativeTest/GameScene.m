@@ -127,7 +127,6 @@ CGPathRef CGPathCreateCopyByDashingPath(
     CGMutablePathRef ref = CGPathCreateMutable();
     for(int i = 0; i < [self.wayPoints count]; ++i) {
         CGPoint p = [self.wayPoints[i] CGPointValue];
-        p = [self.scene convertPointToView:p];
         if(i == 0) {
             CGPathMoveToPoint(ref, NULL, p.x, p.y);
         } else {

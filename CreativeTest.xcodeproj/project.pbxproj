@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		307675E71A077DFD00274788 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 307675E61A077DFD00274788 /* main.m */; };
 		307675EA1A077DFD00274788 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 307675E91A077DFD00274788 /* AppDelegate.m */; };
-		307675ED1A077DFD00274788 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 307675EC1A077DFD00274788 /* GameScene.m */; };
+		307675ED1A077DFD00274788 /* MainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 307675EC1A077DFD00274788 /* MainScene.m */; };
 		307675F21A077DFD00274788 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 307675F11A077DFD00274788 /* GameViewController.m */; };
 		307675F51A077DFD00274788 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307675F31A077DFD00274788 /* Main.storyboard */; };
 		307675F71A077DFD00274788 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 307675F61A077DFD00274788 /* Images.xcassets */; };
 		307675FA1A077DFD00274788 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 307675F81A077DFD00274788 /* LaunchScreen.xib */; };
 		307676061A077DFD00274788 /* CreativeTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 307676051A077DFD00274788 /* CreativeTestTests.m */; };
 		307676101A07832000274788 /* TestScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3076760F1A07832000274788 /* TestScene.sks */; };
+		308F3E831A08EC46001B999B /* VortexDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 308F3E821A08EC46001B999B /* VortexDisplay.m */; };
+		308F3E861A08EE76001B999B /* CircularDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 308F3E851A08EE76001B999B /* CircularDisplay.m */; };
+		308F3E891A08FCA9001B999B /* alphabot.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 308F3E881A08FC8C001B999B /* alphabot.ttf */; };
+		308F3E8A1A08FCAB001B999B /* alphabot.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 308F3E881A08FC8C001B999B /* alphabot.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +38,8 @@
 		307675E61A077DFD00274788 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		307675E81A077DFD00274788 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		307675E91A077DFD00274788 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		307675EB1A077DFD00274788 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
-		307675EC1A077DFD00274788 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		307675EB1A077DFD00274788 /* MainScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainScene.h; sourceTree = "<group>"; };
+		307675EC1A077DFD00274788 /* MainScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainScene.m; sourceTree = "<group>"; };
 		307675F01A077DFD00274788 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		307675F11A077DFD00274788 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		307675F41A077DFD00274788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,6 +49,11 @@
 		307676041A077DFD00274788 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		307676051A077DFD00274788 /* CreativeTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreativeTestTests.m; sourceTree = "<group>"; };
 		3076760F1A07832000274788 /* TestScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TestScene.sks; sourceTree = "<group>"; };
+		308F3E811A08EC46001B999B /* VortexDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VortexDisplay.h; sourceTree = "<group>"; };
+		308F3E821A08EC46001B999B /* VortexDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VortexDisplay.m; sourceTree = "<group>"; };
+		308F3E841A08EE76001B999B /* CircularDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularDisplay.h; sourceTree = "<group>"; };
+		308F3E851A08EE76001B999B /* CircularDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularDisplay.m; sourceTree = "<group>"; };
+		308F3E881A08FC8C001B999B /* alphabot.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = alphabot.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,10 +98,12 @@
 				3076760F1A07832000274788 /* TestScene.sks */,
 				307675E81A077DFD00274788 /* AppDelegate.h */,
 				307675E91A077DFD00274788 /* AppDelegate.m */,
-				307675EB1A077DFD00274788 /* GameScene.h */,
-				307675EC1A077DFD00274788 /* GameScene.m */,
+				307675EB1A077DFD00274788 /* MainScene.h */,
+				307675EC1A077DFD00274788 /* MainScene.m */,
+				308F3E871A08EE7B001B999B /* DisplayElements */,
 				307675F01A077DFD00274788 /* GameViewController.h */,
 				307675F11A077DFD00274788 /* GameViewController.m */,
+				308F3E881A08FC8C001B999B /* alphabot.ttf */,
 				307675F31A077DFD00274788 /* Main.storyboard */,
 				307675F61A077DFD00274788 /* Images.xcassets */,
 				307675F81A077DFD00274788 /* LaunchScreen.xib */,
@@ -125,6 +136,17 @@
 				307676041A077DFD00274788 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		308F3E871A08EE7B001B999B /* DisplayElements */ = {
+			isa = PBXGroup;
+			children = (
+				308F3E811A08EC46001B999B /* VortexDisplay.h */,
+				308F3E821A08EC46001B999B /* VortexDisplay.m */,
+				308F3E841A08EE76001B999B /* CircularDisplay.h */,
+				308F3E851A08EE76001B999B /* CircularDisplay.m */,
+			);
+			name = DisplayElements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +233,7 @@
 				307675F71A077DFD00274788 /* Images.xcassets in Resources */,
 				307676101A07832000274788 /* TestScene.sks in Resources */,
 				307675F51A077DFD00274788 /* Main.storyboard in Resources */,
+				308F3E891A08FCA9001B999B /* alphabot.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				308F3E8A1A08FCAB001B999B /* alphabot.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,8 +254,10 @@
 			files = (
 				307675F21A077DFD00274788 /* GameViewController.m in Sources */,
 				307675EA1A077DFD00274788 /* AppDelegate.m in Sources */,
-				307675ED1A077DFD00274788 /* GameScene.m in Sources */,
+				307675ED1A077DFD00274788 /* MainScene.m in Sources */,
+				308F3E861A08EE76001B999B /* CircularDisplay.m in Sources */,
 				307675E71A077DFD00274788 /* main.m in Sources */,
+				308F3E831A08EC46001B999B /* VortexDisplay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +384,7 @@
 				INFOPLIST_FILE = CreativeTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -368,6 +395,7 @@
 				INFOPLIST_FILE = CreativeTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -424,6 +452,7 @@
 				3076760B1A077DFD00274788 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3076760C1A077DFD00274788 /* Build configuration list for PBXNativeTarget "CreativeTestTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +461,7 @@
 				3076760E1A077DFD00274788 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

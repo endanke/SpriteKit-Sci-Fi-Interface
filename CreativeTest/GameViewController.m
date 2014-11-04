@@ -7,7 +7,7 @@
 //
 
 #import "GameViewController.h"
-#import "GameScene.h"
+#import "MainScene.h"
 
 @implementation GameViewController
 
@@ -23,7 +23,7 @@
     skView.ignoresSiblingOrder = YES;
     
     // Create and configure the scene.
-    GameScene *scene = [[GameScene alloc] initWithSize:skView.bounds.size];
+    MainScene *scene = [[MainScene alloc] initWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     
     // Present the scene.

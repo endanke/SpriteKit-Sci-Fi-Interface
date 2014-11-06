@@ -15,11 +15,14 @@
 		307675F71A077DFD00274788 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 307675F61A077DFD00274788 /* Images.xcassets */; };
 		307675FA1A077DFD00274788 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 307675F81A077DFD00274788 /* LaunchScreen.xib */; };
 		307676061A077DFD00274788 /* CreativeTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 307676051A077DFD00274788 /* CreativeTestTests.m */; };
-		307676101A07832000274788 /* TestScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3076760F1A07832000274788 /* TestScene.sks */; };
 		308F3E831A08EC46001B999B /* VortexDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 308F3E821A08EC46001B999B /* VortexDisplay.m */; };
 		308F3E861A08EE76001B999B /* CircularDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 308F3E851A08EE76001B999B /* CircularDisplay.m */; };
 		308F3E891A08FCA9001B999B /* alphabot.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 308F3E881A08FC8C001B999B /* alphabot.ttf */; };
 		308F3E8A1A08FCAB001B999B /* alphabot.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 308F3E881A08FC8C001B999B /* alphabot.ttf */; };
+		CB7FED721A0A2C0C0005A712 /* ButtonNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7FED711A0A2C0C0005A712 /* ButtonNode.m */; };
+		CBCFA3121A0BF13500315796 /* ConsoleDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCFA3111A0BF13500315796 /* ConsoleDisplay.m */; };
+		CBCFA3151A0BF8FC00315796 /* DisplayNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCFA3141A0BF8FC00315796 /* DisplayNode.m */; };
+		CBF901991A09710500957301 /* ChartNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF901981A09710500957301 /* ChartNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,12 +51,19 @@
 		307675FF1A077DFD00274788 /* CreativeTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreativeTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		307676041A077DFD00274788 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		307676051A077DFD00274788 /* CreativeTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreativeTestTests.m; sourceTree = "<group>"; };
-		3076760F1A07832000274788 /* TestScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TestScene.sks; sourceTree = "<group>"; };
 		308F3E811A08EC46001B999B /* VortexDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VortexDisplay.h; sourceTree = "<group>"; };
 		308F3E821A08EC46001B999B /* VortexDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VortexDisplay.m; sourceTree = "<group>"; };
 		308F3E841A08EE76001B999B /* CircularDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularDisplay.h; sourceTree = "<group>"; };
 		308F3E851A08EE76001B999B /* CircularDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularDisplay.m; sourceTree = "<group>"; };
 		308F3E881A08FC8C001B999B /* alphabot.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = alphabot.ttf; sourceTree = "<group>"; };
+		CB7FED701A0A2C0C0005A712 /* ButtonNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonNode.h; sourceTree = "<group>"; };
+		CB7FED711A0A2C0C0005A712 /* ButtonNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonNode.m; sourceTree = "<group>"; };
+		CBCFA3101A0BF13500315796 /* ConsoleDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsoleDisplay.h; sourceTree = "<group>"; };
+		CBCFA3111A0BF13500315796 /* ConsoleDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsoleDisplay.m; sourceTree = "<group>"; };
+		CBCFA3131A0BF8FC00315796 /* DisplayNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayNode.h; sourceTree = "<group>"; };
+		CBCFA3141A0BF8FC00315796 /* DisplayNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayNode.m; sourceTree = "<group>"; };
+		CBF901971A09710500957301 /* ChartNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartNode.h; sourceTree = "<group>"; };
+		CBF901981A09710500957301 /* ChartNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +105,6 @@
 		307675E31A077DFD00274788 /* CreativeTest */ = {
 			isa = PBXGroup;
 			children = (
-				3076760F1A07832000274788 /* TestScene.sks */,
 				307675E81A077DFD00274788 /* AppDelegate.h */,
 				307675E91A077DFD00274788 /* AppDelegate.m */,
 				307675EB1A077DFD00274788 /* MainScene.h */,
@@ -141,10 +150,18 @@
 		308F3E871A08EE7B001B999B /* DisplayElements */ = {
 			isa = PBXGroup;
 			children = (
+				CBCFA3131A0BF8FC00315796 /* DisplayNode.h */,
+				CBCFA3141A0BF8FC00315796 /* DisplayNode.m */,
 				308F3E811A08EC46001B999B /* VortexDisplay.h */,
 				308F3E821A08EC46001B999B /* VortexDisplay.m */,
 				308F3E841A08EE76001B999B /* CircularDisplay.h */,
 				308F3E851A08EE76001B999B /* CircularDisplay.m */,
+				CBF901971A09710500957301 /* ChartNode.h */,
+				CBF901981A09710500957301 /* ChartNode.m */,
+				CB7FED701A0A2C0C0005A712 /* ButtonNode.h */,
+				CB7FED711A0A2C0C0005A712 /* ButtonNode.m */,
+				CBCFA3101A0BF13500315796 /* ConsoleDisplay.h */,
+				CBCFA3111A0BF13500315796 /* ConsoleDisplay.m */,
 			);
 			name = DisplayElements;
 			sourceTree = "<group>";
@@ -231,7 +248,6 @@
 			files = (
 				307675FA1A077DFD00274788 /* LaunchScreen.xib in Resources */,
 				307675F71A077DFD00274788 /* Images.xcassets in Resources */,
-				307676101A07832000274788 /* TestScene.sks in Resources */,
 				307675F51A077DFD00274788 /* Main.storyboard in Resources */,
 				308F3E891A08FCA9001B999B /* alphabot.ttf in Resources */,
 			);
@@ -252,9 +268,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB7FED721A0A2C0C0005A712 /* ButtonNode.m in Sources */,
 				307675F21A077DFD00274788 /* GameViewController.m in Sources */,
+				CBCFA3151A0BF8FC00315796 /* DisplayNode.m in Sources */,
+				CBF901991A09710500957301 /* ChartNode.m in Sources */,
 				307675EA1A077DFD00274788 /* AppDelegate.m in Sources */,
 				307675ED1A077DFD00274788 /* MainScene.m in Sources */,
+				CBCFA3121A0BF13500315796 /* ConsoleDisplay.m in Sources */,
 				308F3E861A08EE76001B999B /* CircularDisplay.m in Sources */,
 				307675E71A077DFD00274788 /* main.m in Sources */,
 				308F3E831A08EC46001B999B /* VortexDisplay.m in Sources */,

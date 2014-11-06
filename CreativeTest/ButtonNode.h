@@ -1,15 +1,14 @@
 //
-//  CircularDisplay.h
+//  ButtonNode.h
 //  CreativeTest
 //
-//  Created by Daniel Eke on 2014. 11. 04..
+//  Created by Eke Dániel on 2014. 11. 05..
 //  Copyright (c) 2014. endanke. All rights reserved.
 //
 
-#import <SpriteKit/SpriteKit.h>
 #import "DisplayNode.h"
 
-@interface CircularDisplay : DisplayNode
+@interface ButtonNode : DisplayNode
 
 - (instancetype)initWithSize:(CGSize)size;
 

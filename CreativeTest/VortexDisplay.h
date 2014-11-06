@@ -7,10 +7,10 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "DisplayNode.h"
 
-@interface VortexDisplay : SKSpriteNode
+@interface VortexDisplay : DisplayNode
 
-- (instancetype)initWithTexture:(SKTexture *)texture color:(UIColor *)color size:(CGSize)size withPhysicsMask:(int)physicsMask;
-- (void)update;
+- (instancetype)initWithSize:(CGSize)size physicsMask:(int)physicsMask speed:(float)speed;
 
 @end

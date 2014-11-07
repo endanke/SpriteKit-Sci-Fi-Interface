@@ -66,21 +66,29 @@
     self.displayElements = [NSMutableArray array];
     float colSize = self.frame.size.width/4;
     
-    ConsoleDisplay* consoleDisplay = [[ConsoleDisplay alloc] initWithSize:CGSizeMake(colSize*2, 320)];
-    consoleDisplay.position = CGPointMake(CGRectGetMidX(self.frame) - consoleDisplay.frame.size.width/2, CGRectGetMidY(self.frame) + 70);
+    ConsoleDisplay* consoleDisplay = [[ConsoleDisplay alloc] initWithSize:CGSizeMake(colSize*2, colSize/2)];
+    consoleDisplay.position = CGPointMake(CGRectGetMidX(self.frame), consoleDisplay.frame.size.height/2);
     [self.displayElements addObject:consoleDisplay];
     
     CircularDisplay* circularDisplay = [[CircularDisplay alloc] initWithSize:CGSizeMake(colSize*2, colSize*2)];
-    circularDisplay.position = CGPointMake(CGRectGetMaxX(self.frame) - circularDisplay.frame.size.width/2, CGRectGetMaxY(self.frame) - circularDisplay.frame.size.width/2);
+    circularDisplay.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMaxY(self.frame) - circularDisplay.frame.size.width/2);
     
     [self.displayElements addObject:circularDisplay];
     
-    for (int i = 0; (i*colSize/2) < self.frame.size.width/2; i++) {
-        VortexDisplay* vortexDisplay = [[VortexDisplay alloc] initWithSize:CGSizeMake(colSize/2, colSize/2) physicsMask:pow(2, i) speed:1.0+i*0.1];
-        vortexDisplay.position = CGPointMake(vortexDisplay.frame.size.width/2 +i*colSize/2,CGRectGetMaxY(self.frame)-vortexDisplay.frame.size.height/2);
+    for (int i = 0; (i*colSize*0.8) < self.frame.size.height/2; i++) {
+        VortexDisplay* vortexDisplay = [[VortexDisplay alloc] initWithSize:CGSizeMake(colSize*0.8, colSize*0.8) physicsMask:pow(2, i) speed:1.0+i*0.1];
+        vortexDisplay.position = CGPointMake(50 + vortexDisplay.frame.size.width/2 ,CGRectGetMaxY(self.frame)-i*colSize*0.9-vortexDisplay.frame.size.height/2);
         
         [self.displayElements addObject:vortexDisplay];
     }
+    
+    for (int i = 0; (i*colSize*0.8) < self.frame.size.height/2; i++) {
+        VortexDisplay* vortexDisplay = [[VortexDisplay alloc] initWithSize:CGSizeMake(colSize*0.8, colSize*0.8) physicsMask:pow(2, i + 2) speed:1.0+i*0.1];
+        vortexDisplay.position = CGPointMake(CGRectGetMaxX(self.frame) - ( 50 + vortexDisplay.frame.size.width/2) ,CGRectGetMaxY(self.frame)-i*colSize*0.9-vortexDisplay.frame.size.height/2);
+        
+        [self.displayElements addObject:vortexDisplay];
+    }
+    
     for(int i = 0; (i*colSize/2) < self.frame.size.width; i ++){
         ChartNode* chartNode = [[ChartNode alloc] initWithSize:CGSizeMake(colSize/2, colSize/2) physicsMask:6 variator:1.0];
         chartNode.position = CGPointMake(chartNode.frame.size.width/2+i*colSize/2, chartNode.frame.size.height/2+colSize/2);
@@ -103,17 +111,31 @@
         }
     }
     
-    for(int i = 0; (i*colSize/2) < self.frame.size.width; i ++){
+    for(int i = 0; (i*colSize/2) < self.frame.size.width/4; i ++){
         ButtonNode* buttonNode = [[ButtonNode alloc] initWithSize:CGSizeMake(colSize/2, colSize/4)];
         buttonNode.position = CGPointMake(buttonNode.frame.size.width/2+i*colSize/2, buttonNode.frame.size.height/2 + colSize/4);
         [self.displayElements addObject:buttonNode];
     }
     
-    for(int i = 0; (i*colSize/2) < self.frame.size.width; i ++){
+    for(int i = 0; (i*colSize/2) < self.frame.size.width/4; i ++){
         ButtonNode* buttonNode = [[ButtonNode alloc] initWithSize:CGSizeMake(colSize/2, colSize/4)];
         buttonNode.position = CGPointMake(buttonNode.frame.size.width/2+i*colSize/2, buttonNode.frame.size.height/2);
         [self.displayElements addObject:buttonNode];
     }
+    
+    
+    for(int i = 0; (i*colSize/2) < self.frame.size.width/4; i ++){
+        ButtonNode* buttonNode = [[ButtonNode alloc] initWithSize:CGSizeMake(colSize/2, colSize/4)];
+        buttonNode.position = CGPointMake(CGRectGetMaxX(self.frame) - (buttonNode.frame.size.width/2+i*colSize/2), buttonNode.frame.size.height/2 + colSize/4);
+        [self.displayElements addObject:buttonNode];
+    }
+    
+    for(int i = 0; (i*colSize/2) < self.frame.size.width/4; i ++){
+        ButtonNode* buttonNode = [[ButtonNode alloc] initWithSize:CGSizeMake(colSize/2, colSize/4)];
+        buttonNode.position = CGPointMake(CGRectGetMaxX(self.frame) - (buttonNode.frame.size.width/2+i*colSize/2), buttonNode.frame.size.height/2);
+        [self.displayElements addObject:buttonNode];
+    }
+    
     
     for(DisplayNode* display in self.displayElements){
         [self addChild:display];
